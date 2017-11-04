@@ -15,7 +15,7 @@ Aquí podrás encontrar todas las publicaciones en orden cronológico
     <ul>
     {% assign date = currentdate %}
   {% endif %}
-    <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+    <li><a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a></li>
   {% if forloop.last %}</ul>{% endif %}
 {% endfor %}
 </div>
